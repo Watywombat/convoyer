@@ -1,0 +1,12 @@
+{
+  "wifi_ssid": "WIFIARDUINO",
+  "wifi_pass": "12345678",
+  "api_url": "http://10.84.107.113/api/index.php",
+  "api_token": "19o6M9cIlOqR0R02ZC7jINbfU4bqc1Vi",
+  "belt_speed": 35,
+  "timeout_ms": 4500,
+  "watchdog_s": 12,
+  "warehouse_1": 1,
+  "warehouse_2": 2,
+  "warehouse_3": 3
+}

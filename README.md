@@ -24,6 +24,6 @@
 
 - `include/conveyor.hpp` définit événements, décisions et erreurs portables.
 - `src/main.cpp` orchestre tâches, santé, échéances et reprise.
-- `src/carrier.cpp` traduit actions et signaux matériels. `docs/brochage.hpp.exemple` décrit le contrat à renseigner.
+- `src/carrier.cpp` traduit actions et signaux matériels. `docs/brochage.hpp` décrit le contrat à renseigner.
 - `src/station.cpp` valide la configuration, conserve le journal et écrit les images OTA.
 - `src/wms.cpp` effectue les échanges HTTPS et valide les réponses. `dolibarr/custom/conveyor` ajoute les deux opérations spécifiques au client.

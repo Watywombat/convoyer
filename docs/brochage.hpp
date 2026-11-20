@@ -1,5 +1,3 @@
-// Copier dans include/carrier_pins.hpp après relevé et validation électrique.
-// Remplacer chaque symbole SITE_... par la valeur relevée.
 constexpr int beltPin=SITE_PWM_MOTEUR, servoPin=SITE_PWM_SERVO, nfcRx=SITE_RX;
 constexpr int entryPin=SITE_ENTREE, readerPin=SITE_POSTE_NFC, stopSense=SITE_ARRET;
 constexpr int gatePins[]={SITE_POSITION_1,SITE_POSITION_2,SITE_POSITION_3};
