@@ -1,0 +1,9 @@
+# Note de version · 1.1.0-poc
+
+**Statut : sources de POC, livraison embarquée non homologuée.** La version 1.0.0 de l’archive initiale annonçait des opérations simulées. Cette révision introduit la FSM partagée, les entrées physiques, la validation NFC, les trois sorties, les appels REST, la journalisation avant effet de bord, la maintenance SD, la télémétrie et les tests hôte. Elle fournit un module Dolibarr pour la capacité et les incidents.
+
+**Preuve obtenue.** La commande sh tools/test.sh a compilé le noyau C++17 avec avertissements traités comme erreurs, puis exécuté les assertions. Les 13 états et 20 événements donnent 260 couples vérifiés pour l’unicité des règles et le refus des événements non définis. Les scénarios distincts testent le cycle nominal, le parsing, le routage, le refus d’entrepôt plein, la référence inconnue, les erreurs HTTP, la réponse inconnue d’un mouvement et le redémarrage avec un journal actif. Les tests hôte ne sollicitent pas les pilotes ESP-IDF, le module PHP, le réseau ou le matériel.
+
+**Livrables de release restant à produire.** Le compilateur croisé ESP32 et le SDK ne sont pas installés dans l’environnement de revue. Aucun binaire ESP32 ni SHA-256 de firmware compilé n’est fourni. La compilation embarquée, l’installation du module sur la version client, la signature avec les clés d’équipe, le profil réel de carte, la compatibilité des tags, la marge de pile, les mesures physiques, la sécurité d’accès et la démonstration de mise à jour restent à valider. Reporter les deux empreintes, la révision matérielle, la version SDK, la date et le visa dans cette note à la qualification.
+
+Le conditionnement chiffré a également été vérifié sur PC avec une clé éphémère : création du paquet, validation indépendante de la signature par OpenSSL et déchiffrement donnant exactement le JSON de départ. Les clés de cet essai sont exclues du ZIP.

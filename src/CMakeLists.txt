@@ -1,0 +1,1 @@
+idf_component_register(SRCS "main.cpp" "station.cpp" "wms.cpp" "carrier.cpp" INCLUDE_DIRS "../include" REQUIRES fatfs sdmmc esp_event esp_wifi esp_http_server esp_http_client app_update nvs_flash json esp_timer mbedtls driver)
